@@ -74,7 +74,8 @@ body {
     position: absolute !important;
     transform: scale(0.28) translatey(-80%) translatex(-130%) !important;
     left: 25px !important;
-    z-index: 100;}
+    z-index: 100;
+	pointer-events: none !important;}
 
 div#lion_image {
     opacity: 1;
