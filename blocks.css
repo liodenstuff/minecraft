@@ -1,0 +1,661 @@
+@import url('https://fonts.cdnfonts.com/css/minecrafter');
+@import url('https://fonts.cdnfonts.com/css/minecraft-3');
+    body {font-family: 'Minecraft', sans-serif;}
+    .topbar {font-family: 'Minecraft', sans-serif;}
+    .navbar {font-family: 'minecrafter', sans-serif;}
+
+/*Custom Cursor*/
+    *{cursor: url('https://cdn.cursors-4u.net/previews/minecraft-diamond-sword-747afa57-32.webp') 32 32, auto !important;}
+
+/*Pagedoll*/
+.container.main::after {
+    background-image: url('https://i.postimg.cc/wvBPPQnK/Hotbar-with-xp.webp');
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
+    position: fixed;
+    display: block;
+    height: 250px;
+    width: 450px;
+    right: 400px;
+    bottom: -150px;
+    pointer-events:none;
+    z-index: 100;}
+
+/*Logo*/
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+    content: url(https://minecraft.wiki/images/Minecraft_logo_2.svg?eeb79) !important;
+    width: 195px !important;
+    position: relative;
+    top: 220%;
+    transform: scale(1.2) rotate(-20deg);}
+
+/*Background*/
+body {
+    background: url('https://minecraft.wiki/images/Plains_Vibrant_Visuals.png?fe58d') center center fixed !important;
+    color: #0C0C0C !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;}
+
+@media screen and (max-width: 600px){
+body {
+    background: url('https://minecraft.wiki/images/Overworld_background.png?0176d') !important;
+    background-size: cover !important;
+    color: #0C0C0C !important}}
+
+/*Big Container*/
+.container.main {
+    background: rgba(126, 146, 199, 0.2);
+    border: solid 5px;
+    box-shadow: 10px 10px 100px #7E92C7;
+    border-radius: 0px;}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px; }
+::-webkit-scrollbar-track {
+    background: #493A33;}
+::-webkit-scrollbar-thumb {
+    background-image: url('https://i.postimg.cc/kXVBFNpZ/15160745-screenshot-l.webp') !important; 
+    border-radius: 0px; } 
+
+/*King Stuff, Custom Title, Player Image*/
+#about>tbody>tr:nth-child(1)>td>div::after {
+    content: '';
+    font-size: 17px;}
+#about>tbody>tr:nth-child(1)>td>div::before {
+    content: url('https://i.postimg.cc/kXxmWfCd/d1189e45d1d286c898588389d57d4d0c043e5cc4.png');
+    background-image: url('https://i.postimg.cc/kXxmWfCd/d1189e45d1d286c898588389d57d4d0c043e5cc4.png') !important;
+    background-repeat: no-repeat;
+    display: block !important;
+    position: absolute !important;
+    transform: scale(0.28) translatey(-80%) translatex(-130%) !important;
+    left: 25px !important;
+    z-index: 100;}
+
+div#lion_image {
+    opacity: 1;
+    filter: drop-shadow(5px 5px 1px #1C1C1F);
+    border: 10px solid #E0E0E0;
+    border-radius: 0%;
+    overflow: hidden;}
+div#lion_image:hover {
+    opacity: 0.8;}
+
+#lion_image>div>img:first-child {
+    content: url('https://minecraft.wiki/images/Mushroom_Fields.png?8bcd9') !important;
+    transform: scale(1) translate(360px, -90px) !important;}
+
+#lion_image>div::after {
+    content: url('https://minecraft.wiki/images/thumb/Creeper_JE3_BE1.png/256px-Creeper_JE3_BE1.png?40005')!important;
+    display: block;
+    background-image: url('https://minecraft.wiki/images/thumb/Creeper_JE3_BE1.png/256px-Creeper_JE3_BE1.png?40005')!important;
+    background-repeat: no-repeat !important;
+    position: absolute !important;
+    left: 40px !important;
+    top: -30px !important;
+    transform: rotate(10deg) scale(0.5) !important;}
+
+table#player img {
+    opacity: 0.8;
+    border-radius: 0%;
+    border: 2px solid #0C0C0C !important;}
+
+/*Main Stuff, All The Stuff*/
+.navbar {
+    background: #6F6F6F !important;
+    color: #E0E0E0 !important;
+    border: none;
+    border-bottom: 5px solid #0C0C0C !important;
+    border-radius: 0% !important;
+    text-shadow: 2px 2px #0C0C0C !important;}
+.navbar li a {
+    color: #E0E0E0 !important;}
+.navbar li a:hover {
+    background: #7E88BF !important;
+    color: #FFFFA0 !important;
+    text-shadow: 2px 2px #0C0C0C !important;
+    border-left: 2px solid #0C0C0C !important;
+    border-right: 2px solid #0C0C0C !important;
+    border-radius: 0px !important; 
+    transition: 0.5s !important;}
+
+.badge {
+    background: #6F6F6F !important;
+    color: #E0E0E0 !important;
+    text-shadow: 2px 2px #0C0C0C !important;}
+
+.topbar {
+    background: #6F6F6F !important;
+    color: #E0E0E0 !important;
+    text-shadow: 2px 2px #0C0C0C !important;
+    border: 2px solid #0C0C0C !important;
+    border-radius: 0px !important;}
+img[src$="gold.png"] {
+    content:url('https://minecraft.wiki/images/Gold_Ingot_JE4_BE2.png?80cd6')!important;
+    width: 20px !important;
+    height: 20px !important;}
+img[src$="silver.png"] {
+    content:url('https://minecraft.wiki/images/Iron_Ingot_JE3_BE2.png?849cb')!important;
+    width: 20px !important;
+    height: 20px !important;}
+
+h1 {
+    color: #E0E0E0 !important;
+    font-size: 80px;
+    text-align: center !important;
+    font-family: 'minecrafter', sans-serif;
+    text-shadow: #0C0C0C 5px 5px 1px;}
+h3 {
+    color: #E0E0E0 !important;
+    text-shadow: 2px 2px #0C0C0C !important;
+    font-size: 100%;}
+h3::after {
+    content: ""; /*Empty*/
+    background-image: url('https://minecraft.wiki/images/Crafting_Table_JE4_BE3.png?5767f');
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translatey(5px) translatex(5px);
+    pointer-events: none;}
+
+.breadcrumb {
+    background-image: url('https://i.postimg.cc/kXVBFNpZ/15160745-screenshot-l.webp') !important;
+    color: #E0E0E0 !important;
+    text-shadow: 2px 2px #0C0C0C !important;
+    border: 2px solid #0C0C0C !important;
+    border-radius: 0px !important;} 
+.breadcrumb .active {
+    color: #E0E0E0; }
+.breadcrumb::after {
+    content: "CSS by Alflyingpanda (266041)";
+    color: #f0f0f0 !important;
+    position: absolute;
+    right: 15%;
+    z-index: 100;}
+
+.feature {
+    background: #6F6F6F !important;
+    color: #E0E0E0 !important;
+    text-shadow: 2px 2px #0C0C0C !important;
+    border: 3px solid #0C0C0C !important;
+    border-radius: 5px !important;}
+
+div.left {
+    background-image: url('https://i.postimg.cc/xdVYmMw5/a0ce81f10591b00d6dff44ac87be5aec.jpg') !important;
+    color: #E0E0E0 !important;
+    border: 2px solid #0C0C0C !important;
+    border-radius: 0px !important;
+    text-shadow: 2px 2px #0C0C0C !important;}
+.xsmall {
+    font-size: 14px !important;}
+
+input, select {
+    background-image: url('https://i.postimg.cc/xdVYmMw5/a0ce81f10591b00d6dff44ac87be5aec.jpg') !important;
+    border: 2px outset #0C0C0C !important;
+    border-radius: 0px !important;
+    color: #E0E0E0 !important;
+    text-shadow: 2px 2px #0C0C0C !important;}
+
+input:hover {
+    border: 2px inset #0C0C0C !important;}
+
+button.button, a.btn.btn-default.button {
+    background-image: url('https://i.postimg.cc/xdVYmMw5/a0ce81f10591b00d6dff44ac87be5aec.jpg') !important;
+    border: 2px outset #0C0C0C  !important;
+    border-radius: 0px !important;
+    color: #E0E0E0 !important;
+    text-shadow: 2px 2px #0C0C0C !important;}
+
+button.button:hover, a.btn.btn-default.button:hover {
+    border: 2px inset #0C0C0C  !important;}
+
+textarea {
+    background: #6F6F6F !important;
+    border: 2px solid #0C0C0C !important;
+    border-radius: 0 !important;
+    color: #E0E0E0 !important;}
+#editdetailspanel .right {
+    background-image: url('https://i.postimg.cc/xdVYmMw5/a0ce81f10591b00d6dff44ac87be5aec.jpg') !important;
+    border: 0px !important;
+    border-radius: 0 !important;}
+
+.table {
+    background-image: url('https://minecraft.wiki/images/Dirt_%28texture%29_JE2_BE2.png?c9c97');
+    background-size: 3%;
+    border: none !important;
+    border-collapse: separate;
+    border-radius: 0px;}
+.table .left {
+    background: #7E92C7 !important;
+    border-radius: 0 !important;}
+.inner-table .left {
+    background-image: url('https://i.postimg.cc/rFdKCGP3/loda-Ji.webp') !important;
+    border-radius: 0px !important;
+    border: 2px solid #1C1C1F;
+    color:  #E0E0E0;
+    text-shadow: 2px 2px #0C0C0C !important;}
+.inner-table .right {
+    background-image: url('https://i.postimg.cc/kXVBFNpZ/15160745-screenshot-l.webp') !important;
+    border-radius: 0px !important; 
+    border: 2px solid #1C1C1F;
+    color: #E0E0E0 !important;
+    text-shadow: 2px 2px #0C0C0C !important;} 
+.right_odd {
+    background: none !important;}
+
+.top {
+    background-image: url('https://minecraft.wiki/images/Cobblestone_%28texture%29_JE5_BE3.png?9b76f') !important;
+    color: #E0E0E0 !important;
+    text-shadow: 2px 2px #0C0C0C !important;
+    border: 3px solid #0C0C0C !important;
+    border-radius: 0px !important;}
+
+#about .top::after {
+    content: url('https://minecraft.wiki/images/thumb/JavaCreateNewWorld.jpg/460px-JavaCreateNewWorld.jpg?82302');
+    transform: scale(0.8);
+    display: block;}
+    
+.bottom {
+    background: #6F6F6F !important;
+    color: #E0E0E0 !important;
+    border: 3px solid #0C0C0C !important;
+    border-radius: 0px !important;}
+th {
+    background: #6F6F6F !important;
+    color: #E0E0E0 !important;
+    border: 3px solid #0C0C0C !important;
+    border-radius: 0px !important;}
+
+.bottom a:visited, .bottom a {
+    text-decoration: none !important;}
+
+/*Comment Stuff*/
+div#commentBox {
+    background: rgba(12, 12, 12, 0.5) !important;
+    border: 2px solid #0C0C0C !important;
+    border-radius: 0px !important;
+    color: #E0E0E0 !important;}
+#postComment {
+    background: #6F6F6F !important;}
+.comment {     
+    background: #HEX !important;
+    border: none !important;
+    border-bottom: none !important;
+    border-radius: 0px !important;
+    color: #HEX !important;
+    text-align: center !important;}
+.text-muted { 
+    color: #E0E0E0 !important; }
+
+input.bad {
+    background: #0C0C0C !important;}
+input.bad a {
+    color: #E0E0E0 !important;}
+
+table#player.table hr {
+    display: none !important;}
+table#player.table div.xlarge { 
+    margin-top: 10px !important;}
+
+/*Side Bar Stuff*/
+.panel {
+    background-image: url('https://i.postimg.cc/rFdKCGP3/loda-Ji.webp') !important;
+    color: #0C0C0C !important;
+    border: 2px outset #493A33 !important;
+    border-radius: 0px !important;
+    box-shadow: 2px 2px #0C0C0C !important;}
+
+/*IMP*/.progress-bar {
+    background-image: url('https://minecraft.wiki/images/Lava_%28inventory%29_BE.gif?0341a') !important;
+    border-radius: 0px !important;}
+/*Bar Text, Background*/
+.progress div {
+    color: #0C0C0C !important;}
+.progress {
+    background-image: url('https://i.postimg.cc/xdVYmMw5/a0ce81f10591b00d6dff44ac87be5aec.jpg') !important;
+    color: #0C0C0C !important;
+    border-radius: 0px !important;
+    border: 2px solid #0C0C0C;}
+
+/*Links, Alerts*/
+a:link,
+a:visited {
+    color: #E0E0E0 !important;
+    background: none !important;
+    text-shadow: 2px 2px 1px #0C0C0C !important;}
+a:hover {
+    color: #FFFFA0 !important;
+    text-shadow: 2px 2px 1px #0C0C0C;}
+
+.alert {
+    background: #6F6F6F !important;
+    color: #E0E0E0 !important;
+    text-shadow: 2px 2px 1px #0C0C0C !important;
+    border: 2px solid #0C0C0C !important;
+    border-radius: 0px !important;
+    text-align: center !important;}
+
+.alert:hover {
+    background: #7E88BF !important;
+    color: #FFFFA0 !important;
+    border: 2px solid #0C0C0C !important;
+    border-radius: 0px !important;
+    text-align: center !important;}
+
+/*Cave Stuff, Dynasty, Achievements Images*/
+.cave-grid, .mound-grid {
+    background-image: url('https://i.postimg.cc/kXVBFNpZ/15160745-screenshot-l.webp') !important;
+    color: #E0E0E0 !important;
+    border: 2px solid #0C0C0C !important;
+    border-radius: 0px !important;}
+img[src$="unsortedlionsbanner.png"] {
+    background: url('https://minecraft.wiki/images/Chest.gif?ca959') !important;
+    padding-left: 100%;
+    background-size: 30% !important;
+    background-repeat: no-repeat !important;
+    background-position: 45% 100% !important;
+    height: 90px !important;
+    width: 260px !important;}
+img[src$="nestingbanner.png"] {
+    background: url('https://minecraft.wiki/images/Creeper_Spawn_Egg_JE3_BE2.png?3c0c5');
+    padding-left: 100%;
+    background-size: 35% !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50% !important; 
+    height: 90px !important;
+    width: 260px !important;}
+img[src$="prideoverviewbanner.png"] {
+    background: url('https://minecraft.wiki/images/Diamond_Sword_JE3_BE3.png?24296') !important;
+    padding-left: 100%;
+    background-size: 25% !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;
+    height: 90px !important;
+    width: 260px !important;}
+
+img[src$="cavedefault.jpg"] {
+    background: url('https://minecraft.wiki/images/thumb/Ocelot_JE2_BE2.png/300px-Ocelot_JE2_BE2.png?7d798') !important;
+    padding-left: 100%;
+    background-size: 55% !important;
+    background-repeat: no-repeat !important;
+    height: 130px !important;
+    background-position: 50% 50% !important;
+    width: 240px !important;}
+.mound-grid img {
+    background: url('https://minecraft.wiki/images/Bee_JE1.gif?69ac5') !important;
+    padding-right: 130px;
+    padding-top: 92px !important;
+    width: 0 !important;
+    height: 0 !important;
+    background-size: 70% !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;}
+
+img[src$="den_ancestors.png"] {
+    background: url('https://minecraft.wiki/images/thumb/Chicken_JE2_BE2.png/300px-Chicken_JE2_BE2.png?30245')!important;
+    width: 0;
+    height: 0;
+    padding-top: 80px !important;
+    padding-right: 130px;
+    background-size: 25% !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;}
+img[src$="ancestorsfem.png"] {
+    background: url('https://minecraft.wiki/images/thumb/Tamed_Wolf_with_Red_Collar_JE3_BE4.png/300px-Tamed_Wolf_with_Red_Collar_JE3_BE4.png?0eac6')!important;
+    width: 0;
+    height: 0;
+    padding-top: 80px !important;
+    padding-right: 130px;
+    background-size: 35% !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;}
+img[src$="achievements.png"] {
+    background: url('https://minecraft.wiki/images/AdvancementMade.png?f5db6')!important;
+    width: 0;
+    height: 0;
+    padding-top: 80px !important;
+    padding-right: 130px;
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 20% !important;}
+img[src$="showcase.png"] {
+    background:url('https://i.postimg.cc/GpKVq5gh/4238653116.webp')!important;
+    width: 0;
+    height: 0;
+    padding-top: 80px !important;
+    padding-right: 130px;
+    background-size: 30% !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;}
+img[src$="beetlebook.png"] {
+    background:url('https://minecraft.wiki/images/thumb/Spider_JE5_BE4.png/424px-Spider_JE5_BE4.png?b090e')!important;
+    width: 0;
+    height: 0;
+    padding-top: 80px !important;
+    padding-right: 130px;
+    background-size: 35% !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;}
+
+/*Icons, Event Currency*/
+.member-online {
+    background: transparent;
+    content:url('https://minecraft.wiki/images/Slime_face.png?e81b7') !important;
+	border-radius: 0;
+    width:40px!important;
+    height:40px;
+	margin:-10px;
+	margin-left:10px;}
+.member-offline {
+    background: transparent;
+    content:url('https://minecraft.wiki/images/Magma_Cube_face.png?a7eb5') !important;
+	border-radius: 0;
+    width:40px!important;
+    height:40px;
+	margin:-10px;
+	margin-left:10px;}
+
+img[src$="icon-time-night.png"] {
+    content: url('https://i.postimg.cc/sg00Wrty/minecraft-moon-render-by-smashpug64-dgcc7sg-fullview.png');
+    width: 50px !important;
+    height: 50px !important;}
+img[src$="icon-time-day.png"] {
+    content: url('https://i.postimg.cc/Z5DDNS1z/sun-transparent-minecraft-4.png');
+    width: 50px !important;
+    height: 50px !important;}
+
+img[src$="icon-season-dry.png"] {
+    content: url('https://minecraft.wiki/images/Lava_Bucket_JE2_BE2.png?55ee0');
+    width: 40px !important;
+    height: 40px !important;}
+img[src$="icon-season-wet.png"] {
+    content: url('https://minecraft.wiki/images/Water_Bucket_JE2_BE2.png?db4ce');
+    width: 40px !important;
+    height: 40px !important;}
+
+h3>div.floatright {
+    content: url('https://minecraft.wiki/images/Arrow_%28item%29_JE1_BE1.png?93ac1');
+    width: 20px !important;
+    height: 20px !important;
+    transform: rotate(42deg);
+    margin: 10px !important;}
+
+img[src$="icon_den_message.png"] {
+    content: url('https://minecraft.wiki/images/Paper_JE2_BE2.png?9c3be') !important;
+    width: 10px !important;}
+img[src$="icon_den_gift.png"] {
+    content: url('https://minecraft.wiki/images/Diamond_JE3_BE3.png?986a9') !important;
+    width: 10px !important;}
+img[src$="icon_den_trade.png"] {
+    content: url('https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3') !important; 
+    width: 10px !important;}
+img[src$="icon_den_wishlist.png"] {
+    content: url('https://minecraft.wiki/images/Netherite_Ingot_JE1_BE2.png?79364') !important;
+    width: 10px !important;}
+img[src$="icon_den_viewtrade.png"] {
+    content: url('https://minecraft.wiki/images/Villager_badge_Master.png?bca5e') !important;
+    width: 10px !important;}
+img[src$="icon_den_block.png"] {
+    content: url('https://minecraft.wiki/images/Rotten_Flesh_JE3_BE2.png?023cb') !important;
+    width: 10px !important;}
+img[src$="icon_den_friend.png"] {
+    content: url('https://minecraft.wiki/images/Bottle_o%27_Enchanting.gif?ad9ab') !important;
+    width: 10px !important;}
+img[src$="donator.png"] {
+    content: url('https://minecraft.wiki/images/Golden_Apple_JE2_BE2.png?aa827') !important;
+    width: 10px !important;}
+
+/*JAN - Great Hunger*/
+img[src$="dermestid.png"] {
+    content:url('https://minecraft.wiki/images/Raw_Copper_JE3_BE2.png?61c79')!important;
+    width: 20px!important; 
+    height: 20px !important;}
+/*FEB - Aphrodisia*/
+img[src$="heartshell.png"] {
+    content:url('https://minecraft.wiki/images/Heart_%28icon%29.png?faf83')!important;
+    width: 20px!important;
+    height: 20px !important;}
+/*MARCH - Anti-Poaching*/
+img[src$="beetlerhino.png"] {
+    content:url('https://minecraft.wiki/images/Raw_Iron_JE3_BE2.png?de3cd')!important;
+    width: 20px!important; 
+    height: 20px !important;}
+/*APRIL - Rabbit Hunting*/
+img[src$="easteregg.png"] {
+    content:url('https://minecraft.wiki/images/Rabbit_Hide_JE3_BE2.png?b706d')!important;
+    width: 20px!important;
+    height: 20px !important;}
+/*MAY - Championships*/
+img[src$="beetlemant.png"] {
+    content:url('https://minecraft.wiki/images/Gunpowder_JE2_BE2.png?c4145')!important;
+    width: 20px!important;
+    height: 20px !important;}
+/*JUNE - Rise of the Serpent*/
+img[src$="khepri.png"] {
+    content:url('https://minecraft.wiki/images/Slimeball_JE2_BE2.png?ebe30')!important;
+    width: 20px!important;
+    height: 20px !important;}
+/*JULY - METEORITE SHARDS - Meteor Showers*/
+img[src$="shard.png"] {
+    content:url('https://minecraft.wiki/images/Echo_Shard_JE1_BE1.png?726c3')!important;
+    width: 20px!important;
+    height: 20px !important;}
+/*JULY - AXION CORES - Meteor Showers*/
+img[src$="axion.png"] {
+    content:url('https://minecraft.wiki/images/Eye_of_Ender_JE2_BE2.png?3e29b')!important;
+    width: 20px!important;
+    height: 20px !important;}
+/*AUG - CARRION BONES - Droughts & Fires*/
+img[src$="beetlecarrion.png"] {
+    content:url('https://minecraft.wiki/images/Cookie_JE2_BE2.png?15f78')!important;
+    width: 20px!important;
+    height: 20px !important;}
+/*AUG - DRY BONES - Droughts & Fires*/
+img[src$="bone.png"] {
+    content:url('https://minecraft.wiki/images/Bone_JE3_BE2.png?b405e')!important;
+    width: 20px!important;
+    height: 20px !important;}
+/*SEPT - JEWEL BEETLES - Locust Plague*/
+img[src$="beetlejewel.png"] {
+    content:url('https://minecraft.wiki/images/Lapis_Lazuli_JE2_BE2.png?03506')!important;
+    width: 20px!important; 
+    height: 20px !important;}
+/*SEPT - ELDRITCH TOKENS - Locust Plague*/
+img[src$="eldritch.png"] {
+    content:url('https://minecraft.wiki/images/Spider_Eye_JE2_BE2.png?cc51b')!important;
+    width: 20px!important; 
+    height: 20px !important;}
+/*OCT - BLOOD BEETLES - To Hell With Rabies*/
+img[src$="beetleblood.png"] {
+    content:url('https://minecraft.wiki/images/Fermented_Spider_Eye_JE2_BE2.png?ad046')!important;
+    width: 20px!important; 
+    height: 20px !important;}
+/*OCT - NEPHILIM FEATHERS - Angels*/
+img[src$="nephelinefeather.png"] {
+    content:url('https://minecraft.wiki/images/Feather_JE3_BE2.png?b869b')!important;
+    width: 20px!important; 
+    height: 20px !important;}
+/*OCT - DEMON SCALES - Demons*/
+img[src$="demonicscale.png"] {
+    content:url('https://minecraft.wiki/images/Nether_Brick_JE2_BE2.png?be29a')!important;
+    width: 20px!important; 
+    height: 20px !important;}
+/*NOV - Whispering Ancestors*/
+img[src$="scarabbeetle.png"] {
+    content:url('https://minecraft.wiki/images/Blaze_Powder_JE2_BE1.png?b5dec')!important;
+    width: 20px!important; 
+    height: 20px !important;}
+/*DEC - Season of Gifting*/
+img[src$="stinkbug.png"] {
+    content:url('https://minecraft.wiki/images/Coal_JE4_BE3.png?165e9')!important;
+    width: 20px!important; 
+    height: 20px !important;}
+/*TREASURE HUNT - Doubloons*/
+img[src$="icon_doubloon.png"] {
+    content:url('https://minecraft.wiki/images/Raw_Gold_JE3_BE2.png?749e1')!important;
+    width: 20px!important; 
+    height: 20px !important;}
+
+/*Mobile Stuff*/
+.navbar-toggle {
+    border: none !important;
+    background: #6F6F6F !important;}
+
+.navbar-collapse {
+    box-shadow: none !important;
+    border-top: none !important;}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px)  {
+.breadcrumb::after {
+    right: 20%;}}
+@media only screen and (max-width: 991px) and (min-width: 768px)  {
+.breadcrumb::after {
+    right: 20%;}}
+@media only screen and (max-width: 767px) {
+.breadcrumb::after {
+    right: 22%;}}
+
+/*Boxes*/
+.box1 {
+    background-image: url('https://i.postimg.cc/kXVBFNpZ/15160745-screenshot-l.webp');
+    background-position: 50% 50%;
+    background-repeat: no repeat;
+    color: #E0E0E0;
+    text-shadow: #0C0C0C 2px 2px 1px !important;
+    height: 100% !important;
+    width: 70% !important;
+    padding: 1%;
+    border: 5px solid #0C0C0C !important;
+    border-radius: 0 !important;
+    box-shadow: 5px 5px 2px #0C0C0C;
+    overflow: auto;}
+
+.box1::after {
+    content: "";
+    background-image: url('https://minecraft.wiki/images/Squid_JE2_BE2.gif?8a4c4');
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translatey(5px) translatex(10px);
+    pointer-events: none;}
+
+/*Stuff to Ignore*/
+.right_odd, #clans .left {
+    background: none !important;
+    border: none !important;
+    visibility: visible !important;}
+.col-md-9 {
+    background: transparent!important;
+    border-right: none;}
+div.slider.round  {
+    background: #39582F !important;}
+div.slider.round::before {
+    background: #607631 !important;}
